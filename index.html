@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#10283f">
+  <title>Job Radar — Daily opportunities</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brandmark">JR</div>
+    <div class="brandcopy"><div class="eyebrow">PERSONAL CAREER RADAR</div><h1>Job Radar</h1></div>
+    <button id="refreshBtn" class="refresh" aria-label="Refresh jobs">↻ <span>Refresh</span></button>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <div class="pill"><span class="pulse"></span> DAILY SEARCH · JAVA + SECURITY</div>
+        <h2>Find work that<br><em>fits your experience.</em></h2>
+        <p>Relevant backend and cybersecurity product roles, collected into one clean shortlist.</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="shield">⌁</div><span class="node node-a"></span><span class="node node-b"></span><span class="node node-c"></span>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="stat"><span class="stat-label">MATCHED JOBS</span><strong id="jobCount">—</strong></div>
+      <div class="stat"><span class="stat-label">NEW IN FEED</span><strong id="newCount">—</strong></div>
+      <div class="stat"><span class="stat-label">LAST UPDATED</span><strong id="updatedAt">Waiting…</strong></div>
+    </section>
+
+    <section class="controls">
+      <div class="searchbox"><span>⌕</span><input id="searchInput" type="search" placeholder="Search title, company, skill…" autocomplete="off"></div>
+      <div class="filters">
+        <select id="locationFilter" aria-label="Location">
+          <option value="all">All locations</option><option value="india">India</option><option value="remote">Remote</option><option value="chennai">Chennai</option><option value="bengaluru">Bengaluru</option><option value="coimbatore">Coimbatore</option><option value="hyderabad">Hyderabad</option><option value="pune">Pune</option>
+        </select>
+        <select id="typeFilter" aria-label="Role category">
+          <option value="all">All role types</option><option value="backend">Java backend</option><option value="security">Cybersecurity</option><option value="ai-security">AI / app security</option>
+        </select>
+        <select id="sortFilter" aria-label="Sort jobs"><option value="match">Best match</option><option value="date">Most recent</option></select>
+      </div>
+    </section>
+
+    <section class="feed-head"><div><div class="eyebrow">YOUR SHORTLIST</div><h3>Open opportunities</h3></div><span id="resultLabel" class="result-label">Loading jobs…</span></section>
+    <div id="status" class="status" role="status">Loading the latest job feed…</div>
+    <section id="jobList" class="job-list" aria-live="polite"></section>
+
+    <section id="emptyState" class="empty hidden">
+      <div class="empty-icon">⌕</div><h3>No matching roles found</h3><p>Try another keyword or broaden the location filter.</p>
+      <button id="clearFilters" class="secondary-btn">Clear filters</button>
+    </section>
+
+    <section class="settings">
+      <div class="settings-icon">⚙</div><div class="settings-copy"><h3>Search profile</h3><p>Built around Java backend and cybersecurity product development. Edit <code>config.json</code> in your GitHub repository to change keywords, locations or search frequency.</p></div>
+      <a href="https://github.com/" target="_blank" rel="noopener" class="text-link">GitHub ↗</a>
+    </section>
+    <footer><span>JOB RADAR</span><span>Personal tool · Verify role details on the employer’s site</span></footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

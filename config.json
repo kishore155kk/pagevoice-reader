@@ -1,0 +1,73 @@
+{
+  "profile_title": "Java Backend Engineer | Cybersecurity Product Engineer",
+  "experience_years": 4,
+  "locations": [
+    "India",
+    "Remote",
+    "Chennai",
+    "Bengaluru",
+    "Coimbatore",
+    "Hyderabad",
+    "Pune"
+  ],
+  "queries": [
+    {
+      "query": "Java Backend Engineer Redis",
+      "category": "backend"
+    },
+    {
+      "query": "Java Developer cybersecurity product",
+      "category": "security"
+    },
+    {
+      "query": "Application Security Engineer Java",
+      "category": "security"
+    },
+    {
+      "query": "SIEM Security Software Engineer",
+      "category": "security"
+    },
+    {
+      "query": "WAF Engineer backend",
+      "category": "security"
+    },
+    {
+      "query": "AI application security engineer Java",
+      "category": "ai-security"
+    }
+  ],
+  "keywords": [
+    "Java",
+    "backend",
+    "REST API",
+    "Redis",
+    "Lua",
+    "Caffeine",
+    "rate limiting",
+    "throttling",
+    "WAF",
+    "SIEM",
+    "malware scanning",
+    "ClamAV",
+    "VirusTotal",
+    "application security",
+    "SQL",
+    "PostgreSQL",
+    "MySQL",
+    "Micrometer",
+    "distributed systems",
+    "production support"
+  ],
+  "exclude_keywords": [
+    "intern",
+    "internship",
+    "graduate trainee",
+    "unpaid",
+    "principal engineer",
+    "staff engineer",
+    "director"
+  ],
+  "min_match_score": 25,
+  "max_jobs": 150,
+  "country": "in"
+}
