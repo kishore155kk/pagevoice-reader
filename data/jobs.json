@@ -1,0 +1,5 @@
+{
+  "updated_at": null,
+  "note": "Starter feed: no live job provider is configured yet. Add API credentials to GitHub repository secrets, then run the workflow.",
+  "jobs": []
+}
